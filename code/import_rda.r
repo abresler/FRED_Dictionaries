@@ -1,6 +1,6 @@
 import_rda_file <- function(file = 'Desktop/fred/fred_series_tags.rda') {
 
-  if (file %>% is_null()) {
+  if (file %>% purrr::is_null()) {
     stop("Please enter a file path")
   }
 
